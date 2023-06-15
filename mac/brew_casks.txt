@@ -1,0 +1,5 @@
+bitwarden
+discord
+font-jetbrains-mono-nerd-font
+iterm2
+postman
