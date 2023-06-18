@@ -1,0 +1,63 @@
+# Don't print a new line at the start of the prompt
+add_newline = false
+
+# Disables the line_break module, making the prompt a single line.
+[line_break]
+disabled = true
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+# Disable the AWS module; it's noisy
+[aws]
+disabled = true
+
+# I'd like to be able to get rid of the "on" prefix in a future version
+[git_branch]
+format = "[$symbol$branch(:$remote_branch)]($style) "
+symbol = ""
+style = "italic #E5E9F0"
+
+[git_status]
+format = "([$all_status$ahead_behind]($style)) "
+style = "bold #ECEFF4"
+up_to_date = '✓'
+staged = '[++\($count\)](green)'
+ahead = '⇡${count}'
+diverged = '⇕⇡${ahead_count}⇣${behind_count}'
+behind = '⇣${count}'
+
+
+# How to make this do something?
+#[git_commit]
+
+#commit_hash_length = 4
+[directory]
+style = "bold #D8DEE9"
+truncate_to_repo = false
+truncation_length = 5
+
+# Language configs might be useful when they're less wordy someday.
+
+[ruby]
+disabled = true
+#symbol = " "
+
+[nodejs]
+disabled = true
+#symbol = ""
+#style = "bold yellow"
+
+[python]
+disabled = true
+#symbol = ""
+#style = "bold green"
+
+[golang]
+disabled = true
+#symbol = "ﳑ"
+
+[docker_context]
+disabled = true
+
