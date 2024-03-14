@@ -55,9 +55,9 @@ disabled = true
 #style = "bold green"
 
 [golang]
-disabled = true
-#symbol = "ﳑ"
+disabled = false
+symbol = "󰟓 "
 
 [docker_context]
-disabled = true
-
+disabled = false
+symbol = "󰡨 "

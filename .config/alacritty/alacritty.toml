@@ -12,4 +12,12 @@ size = 12
 osc52 = "CopyPaste"
 
 [keyboard]
-bindings = [{ key = "F11", mods = "None", action = "ToggleFullScreen" }]
+bindings = [
+  { key = "F11", mods = "None", action = "ToggleFullScreen" },
+  { key = "+", mods = "Control|Shift", action = "IncreaseFontSize" },
+  { key = "_", mods = "Control|Shift", action = "DecreaseFontSize" },
+  { key = "=", mods = "Control", action = "ResetFontSize" },
+  { key = "T", mods = "Control|Shift", chars = "tmux\n" },
+  { key = "y", mods = "Alt", action = "CopySelection" },
+  { key = "p", mods = "Alt", action = "PasteSelection" },
+]
